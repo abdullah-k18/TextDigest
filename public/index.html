@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TextDigest</title>
+    <link rel="stylesheet" href="stylesheet.css">  
+    <link rel="shortcut icon" href="https://www.svgrepo.com/show/183132/open-book-book.svg" type="image/x-icon" />
+</head>
+<body>
+    <section class="intro-section">
+        <h1>TextDigest</h1>
+        <p> Welcome to TextDigest! This app provides concise summaries of lengthy texts, helping you quickly grasp the main points. Whether you're working with a long article, research paper, or any other document, TextDigest simplifies your reading experience and saves you time. </p>
+        <button id="scroll-button" class="scroll-button">
+            <span>&#8595;</span>
+        </button>
+    </section>
+    
+    <section class="input-section">
+        <div class="container">
+            <div class="text-box">
+                <textarea id="text_to_summarize" name="text_to_summarize" placeholder="Enter or paste the text to summarize" maxlength="100000"></textarea>
+                <button id="submit-button" class="submit-button">
+                    <span class="submit-button-text">Summarize</span>
+                </button>
+            </div>
+            <div class="text-box"> 
+                <textarea id="summary" name="summarized_text" readonly></textarea>
+            </div>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
